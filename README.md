@@ -1,5 +1,4 @@
 # Note-Taker-Hw
-# Note-Taker-Hw
 
 ## Table of contents
 * [Description](#description)
