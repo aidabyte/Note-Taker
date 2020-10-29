@@ -133,6 +133,7 @@ const renderNoteList = (notes) => {
   });
 
   $noteList.append(noteListItems);
+
 };
 
 // Gets notes from the db and renders them to the sidebar

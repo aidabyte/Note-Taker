@@ -3,12 +3,8 @@ var path = require("path")
 var fs = require("fs");
 
 
-const userNotes = [
-    {
-        title: "aida",
-        notes: "hello"
-
-}]
+const userNotes = [];
+ 
 
 
 
@@ -32,22 +28,34 @@ app.get("/notes", function(req, res) {
 });
 
 app.get("/api/notes",function(req,res) {
-    res.json("userNotes");
+    res.sendFile (path.join(__dirname,"./db/db.json"));
 })
 
 
+app.delete("/api/notes/:id",function(req,res){
+    let deleteNote = JSON.parse(fs.readFileSync("./db/db.json", "utf8"));
+    let filteredArray = deleteNote.filter(function(note){
+        // note object to brand new array
+        return note.id != req.params.id
+    })
+    // turned objects into array
+    fs.writeFileSync("./db/db.json", JSON.stringify(filteredArray));
+    res.redirect("/notes")
 
-
+})
 
 
 
 
 app.post("/api/notes", function(req,res){
     let newNote = req.body;
-    let saved = JSON.parse(fs.readFile("./db/db.json", "utf8"));
+    let saved = JSON.parse(fs.readFileSync("./db/db.json", "utf8"));
+    console.log(saved);
+    newNote.id = saved.length
     saved.push(newNote);
-    // console.log(req.body);
-    // res.json("added")
+    fs.writeFileSync("./db/db.json", JSON.stringify(saved));
+    console.log(req.body);
+    res.json("added")
 })
 
 
