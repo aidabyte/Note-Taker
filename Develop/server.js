@@ -33,7 +33,9 @@ app.get("/api/notes",function(req,res) {
 
 
 app.delete("/api/notes/:id",function(req,res){
+    // to delete a note from the user youll need to read all notes from dbjson file
     let deleteNote = JSON.parse(fs.readFileSync("./db/db.json", "utf8"));
+    // remove note with its id and then rewrite notes to dbjson file
     let filteredArray = deleteNote.filter(function(note){
         // note object to brand new array
         return note.id != req.params.id
