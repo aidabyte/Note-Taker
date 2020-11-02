@@ -46,7 +46,7 @@ app.delete("/api/notes/:id",function(req,res){
 
 
 
-
+// new note that will save on request body and add it to the db.json file, finally return new note to user
 app.post("/api/notes", function(req,res){
     let newNote = req.body;
     let saved = JSON.parse(fs.readFileSync("./db/db.json", "utf8"));
