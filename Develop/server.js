@@ -42,7 +42,8 @@ app.delete("/api/notes/:id",function(req,res){
     })
     // turned objects into array
     fs.writeFileSync("./db/db.json", JSON.stringify(filteredArray));
-    res.redirect("/notes")
+    res.send("/notes")
+    // res.send to delete the note instantly 
 
 })
 
