@@ -29,7 +29,4 @@ To get this project up and running follow the steps bellow.
 1. nodejs
 2. express
 3. postman
-<<<<<<< HEAD
 
-=======
->>>>>>> f600595059047c87683bfa4a0eb00f100404602e
