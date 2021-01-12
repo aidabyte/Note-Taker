@@ -2,12 +2,16 @@
 
 ## Table of contents
 * [Description](#description)
+* [Screenshot](#screenshot)
 * [Installation](#installation)
 * [Technologies](#technologies)
 
 
 ## Description
 A user can save,delete, or add notes to a notetaker
+
+## Screenshot
+
 
 ## Installation
 
