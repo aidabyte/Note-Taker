@@ -11,6 +11,7 @@
 A user can save,delete, or add notes to a notetaker
 
 ## Screenshot
+![Example screenshot](notetakerhw.png)
 
 
 ## Installation
