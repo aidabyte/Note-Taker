@@ -8,7 +8,8 @@
 
 
 ## Description
-A user can save,delete, or add notes to a notetaker
+A digital notepad created to save,delete, or add notes so the user can remember what they wrote down when it was important.
+If you refresh the page the notes will still be their. 
 
 ## Screenshot
 ![Example screenshot](notetakerhw.png)
