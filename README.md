@@ -2,6 +2,7 @@
 
 ## Table of contents
 * [Description](#description)
+* [User Story](#userstory)
 * [Screenshot](#screenshot)
 * [Installation](#installation)
 * [Technologies](#technologies)
@@ -10,6 +11,14 @@
 ## Description
 A digital notepad created to save,delete, or add notes so the user can remember what they wrote down when it was important.
 If you refresh the page the notes will still be their. 
+
+## User Story
+
+AS A user, I want to be able to write and save notes
+
+I WANT to be able to delete notes I've written before
+
+SO THAT I can organize my thoughts and keep track of tasks I need to complete
 
 ## Screenshot
 ![Example screenshot](notetakerhw.png)
